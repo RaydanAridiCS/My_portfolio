@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-light: #00346b;
+    --primary: #00264f;
+    --primary-dark: #001933;
+    --secondary: #26A69A;
+    --text: cyan;
+
+}
+
+.fredoka-fredoka-font {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+    background-color: var(--primary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+/*Navbar*/
+.sidebar {
+    height: 100vh;
+    width: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    background-color: var(--primary-light);
+    height: 50%;
+    width: 50px;
+    position: fixed;
+    left: 0;
+    margin: 25vh auto;
+    padding: 5px;
+    border: solid 2px var(--primary-dark);
+    border-radius: 50px;
+}
+
+.navbar-links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar-links a {
+    border: solid 2px var(--primary-light);
+    border-radius: 50%;
+}
+
+.navbar-links a img {
+    color: var(--text);
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar-links a:hover {
+    border: solid 2px var(--primary-dark);
+    border-radius: 50%;
+    background: var(--primary-dark);
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 40px;
+    }
+
+    .navbar-links a img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .navbar {
+        width: 30px;
+    }
+
+    .navbar-links a img {
+        width: 20px;
+        height: 20px;
+    }
+}
