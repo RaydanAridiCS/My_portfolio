@@ -326,3 +326,71 @@ body {
         margin-left: 20px;
     }
 }
+
+/*Education Section*/
+.education {
+    background: linear-gradient(180deg, var(--primary-light), var(--primary));
+    /*background: var(--primary-dark);*/
+    display: flex;
+    padding: 5rem 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-content {
+    margin-left: 40px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.certificate-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.certificate-content {
+}
+
+.certificate-content h3 {
+    text-align: start;
+    color: var(--text);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.certificate-content p {
+    color: white;
+    padding: 0.5rem;
+}
+
+.certificate-img {
+    right: 0;
+    width: 40%;
+
+}
+
+@media (max-width: 768px) {
+    .education-content {
+        font-size: 1rem;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .education-content {
+        margin-left: 20px;
+    }
+    .section-title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .certificate-content{
+        font-size: 0.8rem;
+    }
+
+}
