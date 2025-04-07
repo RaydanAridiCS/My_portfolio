@@ -105,3 +105,111 @@ body {
         height: 20px;
     }
 }
+
+
+/*Hero section*/
+.home{
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    padding: 10px;
+    margin-left: 40px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, var(--text), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(to right, var(--primary-light), var(--primary));
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-links {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-dark);
+    color: var(--text);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    background-color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero {
+        margin-left: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        color: var(--text);
+    }
+
+    .btn {
+        padding: 0.6rem 1.3rem;
+        font-size: 0.8rem;
+    }
+}
+
