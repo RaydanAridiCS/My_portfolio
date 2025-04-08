@@ -108,9 +108,10 @@ body {
 
 
 /*Hero section*/
-.home{
+.home {
     background: linear-gradient(135deg, var(--primary-light), var(--primary));
 }
+
 .hero {
     height: 100vh;
     display: flex;
@@ -368,9 +369,18 @@ body {
     padding: 0.5rem;
 }
 
-.certificate-img {
+.certificate-img img {
+    /*height: 100px;*/
+    /*width: 200px;*/
+    /*right: 0;*/
+    /*!*width: 40%;*!*/
+}
+
+.certificate-img img {
+    height: 100%;
+    width: 100%;
     right: 0;
-    width: 40%;
+    /*width: 40%;*/
 
 }
 
@@ -385,11 +395,13 @@ body {
     .education-content {
         margin-left: 20px;
     }
-    .section-title{
+
+    .section-title {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
-    .certificate-content{
+
+    .certificate-content {
         font-size: 0.8rem;
     }
 
@@ -497,6 +509,90 @@ body {
 
 @media (max-width: 420px) {
     .projects-grid {
+        margin-left: 20px;
+    }
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 6rem 0;
+    background-color: var(--primary-dark);
+}
+
+.contact-container {
+    margin-left: 40px;
+    display: flex;
+    gap: 3rem;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+}
+
+.contact-info p {
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.contact-item {
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item i {
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+.contact-form {
+    color: white;
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .contact-container {
         margin-left: 20px;
     }
 }
