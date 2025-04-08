@@ -490,6 +490,7 @@ body {
 }
 
 .project-tag:hover {
+    cursor: pointer;
     color: var(--text);
     background-color: var(--primary);
 }
